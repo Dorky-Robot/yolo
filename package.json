@@ -1,0 +1,13 @@
+{
+  "name": "yolo",
+  "version": "0.1.0",
+  "description": "Claude Code launcher with katulong browser mode support",
+  "type": "module",
+  "bin": {
+    "yolo": "./bin/yolo.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.71",
+    "ws": "^8.18.0"
+  }
+}
