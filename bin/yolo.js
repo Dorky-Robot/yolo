@@ -20,6 +20,11 @@
 //   await katulongMode(env, process.argv.slice(2));
 // }
 
+import { parseSession } from "../lib/session-env.js";
 import { passthrough } from "../lib/passthrough.js";
+
+// Export SIPAG_PROJECT and SIPAG_ROLE from the katulong session name
+// so Claude Code hooks can publish to the correct pub/sub topic.
+parseSession();
 
 passthrough(process.argv.slice(2));
